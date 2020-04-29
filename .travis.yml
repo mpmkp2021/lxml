@@ -39,3 +39,13 @@ install:
 
 script:
   - echo "Script section"
+
+deploy:
+  provider: pypi
+  user: mkp2020
+  password:
+    secure: l5xEU7ZKxIdu+4evXZK7bqZbYYJeeZnP02na75/LCyiV/X3tet38kS6Win/j60cBbPoktYZaW4VguX5HVVWAoJhZhLz52WhT3CE+RBv8YKI/3HUcgftxrcPDU/YLWCdaIlZW0fg89lLXWZ8/UrpsjlR5GsJH5v4+Iy01OwjemJHTTX86Mss8lRVvgdY2ICbp+sa+u5EmiAUyQIvnY5MN/N0hWlM1/fpDYQmZYsqmqiUdm3y2aXjtprX70123P6r2u2KKfF4yBvucfliedUxfGjZ7YzkGBanj9QVNp9PYec26S1O4cIk2p9v2L4CM5hSmPkPrbwsIV8VH5+GNfbyJsE8b9ccTeR+QW8Ygrf/mZhffjvRXmnYcwwrS4d2YWqy+z0evdTJ9Uz7SedhD5kr1qSZ+ffXkyhcPGZqUrNHRKemhjqyBv1vPt4NXnvKYX3ZevwaYvamMhQq97iRv+h+ZIOvlbjGgKlDyWrlASZlOCOF3wY7kq3I8JqPcDpQxGbYJsDw1wJAf1rPIWv7R0y1Vs4E49T/xPKWb/aWEKmLjK1LE/fvj4YoiIMtz6AuDe7O+mgmdaGuplaGcft5JqTd8orYuhfwyDVxEtMU5s3dFtUHKhS2cMVpnVRCYQaiSjWn+lK5qcS5q5V55qQw67H714vCFiQuuVDikdCU7ON36CxQ=
+  on:
+    repo: mpmkp2021/lxml
+  skip_cleanup: 'true'
+  distributions: sdist bdist_wheel
