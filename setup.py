@@ -181,7 +181,7 @@ def setup_extra_options():
     return extra_opts
 
 setup(
-    name = "lxml",
+    name = "lxml_odidev",
     version = lxml_version,
     author="lxml dev team",
     author_email="lxml-dev@lxml.de",
