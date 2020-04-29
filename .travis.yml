@@ -45,4 +45,4 @@ deploy:
   on:
     repo: mpmkp2021/lxml
   skip_cleanup: 'true'
-  distributions: sdist bdist_wheel
+  distributions: sdist bdist_wheel --plat-name manylinux2014_aarch64
